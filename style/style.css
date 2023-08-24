@@ -1,10 +1,31 @@
-header {border-bottom: 1px solid #EB8473;}
+.header-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #EB8473;
+    padding: 0.5rem 0;
+    margin top: 0;
+}
+
+.logo {
+    max-width: 100%; /* Asegura que el logo no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto del logo */
+}
 
 
-.banner { width: 1440px;
-height: inherit;}
 
-h1 {font-family: poppins;}
+.banner img{
+height: 300px;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+.banner {display: flex;}
+.banner h1 {font-family: poppins;}
+
+.presentacion p {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+
 
 p{font-size: 1rem;
 font-family: poppins;}
