@@ -1,51 +1,18 @@
-.header-container {
+* {margin: 0;
+padding: 0;}
+
+header {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
     background-color: #EB8473;
-    padding: 0.5rem 0;
-    margin top: 0;
-}
+    position: relative;}
+
+.header-container {margin-top: 0;}
 
 .logo {
-    max-width: 100%; /* Asegura que el logo no exceda el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de aspecto del logo */
-}
-
-
-
-.banner img{
-height: 300px;
-display: flex;
-justify-content: center;
-align-items: center;}
-
-.banner {display: flex;}
-.banner h1 {font-family: poppins;}
-
-.presentacion p {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
-
-
-
-p{font-size: 1rem;
-font-family: poppins;}
-h6 {font-family: poppins;}
-
-h2 {font-family: poppins;
-font-size: 1rem;}
-h4{font-family: poppins;
-font-size: 0.5rem;}
-
-section div img {height: 30rem;}
-section img {height: 15rem;}
-
-.proyecto {text-align: center;}
-section h5 {text-align: center;}
-
-.nuevoproyecto {text-align: center;
-background-color: #EB8473;}
-.derechos {font-size: 0.5rem;
-text-align: center;}
+    max-width: 100%; 
+    height: auto; }
 
 .header-container {display: flex;
 justify-content: space-between;
@@ -71,6 +38,52 @@ color: black;
 display: flex;
 gap: 20px;}
 
+
+.banner img{
+height: 300px;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+.banner {display: flex;}
+.banner h1 {font-family: poppins;}
+
+.presentacion p {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+
+
+h6 {font-family: poppins;}
+
+h2 {font-family: poppins;
+font-size: 1rem;}
+h4{font-family: poppins;
+font-size: 0.5rem;}
+.grid-container {display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: 400px auto 400px auto;
+row-gap: 100px;
+column-gap: 50px;
+padding: 20px;
+margin: 50px;}
+.grid-container img{width: 20rem;
+    height: 100%;
+    object-fit: cover;
+margin: 50px;}
+.grid-container div h6 {text-align: center;}
+
+
+
+.proyecto {text-align: center;
+;margin-top: 400px;}
+section h5 {text-align: center;}
+
+.nuevoproyecto {text-align: center;
+background-color: #EB8473;}
+.derechos {font-size: 0.5rem;
+text-align: center;}
+
 footer {display: flex;
 justify-content: center;
 gap: 20px;}
+
+footer nav img {margin: 5px;}
