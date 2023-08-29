@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aluhé Molina</title>
-<link rel="stylesheet" href="style/style.css"></head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css"></head>
 <!-- Fonts -->
 
 <!-- Fuente general-->
@@ -15,20 +16,24 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Poppins:wght@100;300&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+</head>
+    
+</html>
 
 <body>
     <!-- Zona navegable -->
-<header class="header-container">
-    <img src="logos/Group 1.png" alt="Logo Aluhé" class="logo">
-    <nav class="nav-menu">
-        <ul class="menu-list">
-            <li><a href="pages/ilustracion.html"></a>Ilustración</li>
-            <li><a href="pages/dirarte.html"></a>Dirección de Arte</li>
-            <li><a href="pages/escenografia.html"></a>Escenografía</li>
-            <li><a href="pages/vestuario.html"></a>Vestuario</li>
-        </ul>
-    </nav>
-</header>
+    <header class="header-container">
+        <img src="logos/Group 1.png" alt="Logo Aluhé" class="logo">
+        <nav class="nav-menu">
+            <ul class="menu-list">
+                <li><a href="pages/ilustracion.html">Ilustración</a></li>
+                <li><a href="pages/textil.html">Textil</a></li>
+                <li><a href="pages/escenografia.html">Escenografía</a></li>
+                <li><a href="pages/vestuario.html">Vestuario</a></li>
+            </ul>
+        </nav>
+    </header>
+    
 
 <section class="bienvenida">
     <div class="banner">
@@ -37,23 +42,46 @@
                 ilustrado. Me interesa reflejar las pequeñas cosas de la vida
                 cotidiana con color y frescura. 
             </p></div>
-        <img src="images/DOÑAS QUE CORREN A4.jpg" alt="ilustracion labradoras trabajando">   
+        <img src="images/ilustracion-digital/DOÑAS QUE CORREN A4.jpg" alt="ilustracion labradoras trabajando">   
     </div>
 </section>
 
+<section> 
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="images/fanzines/FANZINE - DE LA PATAGONIA - CARA A - A3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/fanzines/FANZINE 2 ADELANTE.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/fanzines/FANZINE - DONDE EL AIRE ESTÁ - CARA A - A3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+ </section>
+
 <!-- Está sección es para mostrar los proyectos de ilustración destacados-->
-<section class="grid-container">
-    <div class="abrazo"><img src="images/ABRAZAZO-A4 RGB.jpg" alt="">
-         <h6>imagen 1</h6></div>
-    <div class="barbudo"><img src="images/BARBUDO-A4.jpg" alt="">
-        <h6>imagen 2</h6></div>
-    <div class="acuche"><img src="images/ACUCHE - IMPRIMIR A3 COLOR - ILUSTRACIÓN 200 O 300 G.jpg" alt="">
-         <h6>imagen 3</h6></div>
-    <div class="afro"><img src="images/AFRO-A4.jpg" alt="">
-         <h6>imagen 4</h6></div>
-    <div class="ciudad"><img src="images/ME PESA LA CIUDAD-A4.jpg" alt="">
-            <h6>imagen 5</h6></div>
-</section>
 
 <section>
     <h2 class="proyecto">¿Tenés un proyecto?</h2>
@@ -80,6 +108,7 @@
     
     
     </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
 </body>
 </html>
